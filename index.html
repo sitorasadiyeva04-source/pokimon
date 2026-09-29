@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="logo-box">
+                <h1 class="logo-text">Pokémon</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="search your pokemon">
+                <select id="typeSelect">
+                    <option value="all">all</option>
+                </select>
+                <button id="sortBtn">sort</button>
+                <button id="searchBtn">seach</button>
+            </div>
+        </header>
+
+        <div class="pokemon-grid" id="pokemonGrid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #242424;
+    border: 2px solid #3399ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo-text {
+    color: #ffcb05;
+    font-size: 42px;
+    font-style: italic;
+    text-shadow: 2px 2px #3b4cca;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #2e8b57;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 15px;
+}
+
+.pokemon-card {
+    background-color: #ffeb3b;
+    color: #000000;
+    border-radius: 6px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Красный бейдж с номером в правом верхнем углу */
+.pokemon-index {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #e53935;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.pokemon-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.pokemon-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 5px auto;
+    display: block;
+}
+
+.pokemon-info {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.pokemon-info p {
+    margin: 3px 0;
+}
+
+/* Светло-голубая плашка для типов, как на скриншотах */
+.type {
+    background-color: #d0e1fd;
+    color: #004085;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Яркая голубая кнопка времени в левом нижнем углу */
+.p-btn {
+    background-color: #00bcd4;
+    border: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 5px;
+}
